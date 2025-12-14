@@ -9,6 +9,17 @@ app.listen(3000, () => {
   console.log("Web server running");
 });
 
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.status(200).send("Bot Aktif");
+});
+
+app.listen(3000, () => {
+  console.log("Web server running");
+});
+
 const {
     Client,
     GatewayIntentBits,
