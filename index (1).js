@@ -1,24 +1,16 @@
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res) => {
-  res.status(200).send("Bot Aktif");
-});
-
-app.listen(3000, () => {
-  console.log("Web server running");
-});
-
-const express = require("express");
-const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.status(200).send("Bot Aktif");
 });
 
-app.listen(3000, () => {
-  console.log("Web server running");
+app.listen(PORT, () => {
+  console.log(`74.220.49.0/24 ${PORT}`);
 });
+
 
 const {
     Client,
